@@ -4,11 +4,11 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-add_to_database	main.pl	61;"	s
-checkusage	main.pl	150;"	s
+add_to_database	main.pl	66;"	s
+checkusage	main.pl	155;"	s
 export_from_database	main.pl	38;"	s
-get_files	main.pl	138;"	s
+get_files	main.pl	143;"	s
 main	main.pl	11;"	s
-process_file	main.pl	103;"	s
-process_files	main.pl	94;"	s
-usage	main.pl	161;"	s
+process_file	main.pl	108;"	s
+process_files	main.pl	99;"	s
+usage	main.pl	166;"	s

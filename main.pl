@@ -37,6 +37,10 @@ sub main{
 }
 sub export_from_database{
     my $dbh = shift;
+
+    my $file_name = "albums.csv";
+    open OUTPUT, '>'.$file_name or die "cannot open the file\n";
+    
     
     my $sql = 'select b.id as band_id, b.name as band_name, a.id as album_id, ' .
 		'a.name as album_name, a.position as position  ' .
@@ -54,9 +58,10 @@ sub export_from_database{
         my $album_id = $row->{"album_id"};
         my $album_name = $row->{"album_name"};
         my $position = $row->{"position"};
-        print "$band_id, $band_name, $album_id, $album_name, $position\n";
+        print OUTPUT "$band_id, $band_name, $album_id, $album_name, $position\n";
     }
     $sth->finish();
+    close OUTPUT;
 }
 sub add_to_database{
     my ($dbh, $data) = @_;
